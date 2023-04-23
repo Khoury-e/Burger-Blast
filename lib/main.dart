@@ -1,8 +1,10 @@
+import 'package:burger_blast/menu.dart';
 import 'package:burger_blast/signin.dart';
 import 'package:flutter/material.dart';
 import 'package:burger_blast/Profile.dart';
 import 'package:burger_blast/sign_up.dart';
-import 'package:burger_blast/home_page.dart';
+import 'package:burger_blast/home_page2.dart';
+import 'package:burger_blast/home_page1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,10 +19,15 @@ class MyApp extends StatelessWidget {
       title: 'Burger Blast',
       initialRoute: '/home',
       routes: <String, WidgetBuilder>{
-        '/home': (BuildContext context) => const HomePage(title: "Home Page"),
+        '/home_1': (BuildContext context) =>
+            const HomePage1(title: "Home Page 1"),
+        '/home_2': (BuildContext context) =>
+            const HomePage2(title: "Home Page 2"),
         '/profile': (BuildContext context) => const Profile(
               title: "My Profile",
             ),
+        '/view_menu': (BuildContext context) =>
+            const ViewMenu(title: "View Menu"),
         '/signup': (BuildContext context) =>
             const SignUp(title: "Sign Up Page"),
         '/signin': (BuildContext context) =>
