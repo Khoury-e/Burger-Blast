@@ -7,10 +7,11 @@ class HomePage2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(title)),
       backgroundColor: const Color.fromARGB(255, 247, 213, 145),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Container(
                 margin: EdgeInsets.all(10.0),
