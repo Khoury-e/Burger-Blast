@@ -6,11 +6,46 @@ class HomePage1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(title)),
-      body: Container(
-        color: Colors.black,
+     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 247, 213, 145),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          // Display the image in a container
+          Container(
+            margin: EdgeInsets.all(20),
+            child: Image.asset('assets/icons/logo_transparent.png'),
+          ),
+          
+          // Add a button shaped like an arrow
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/homepage2');
+            },
+            child: Text(
+              'tap to continue',
+              style: TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight.normal,
+              color: Color.fromARGB(255, 247, 213, 145),
+              ),
+            ),
+            
+            style: ElevatedButton.styleFrom(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),
+              ),
+              padding: EdgeInsets.all(18),
+              primary: Colors.red,
+            ),
+          ),
+
+          
+        ],
       ),
     );
+
+
   }
 }
