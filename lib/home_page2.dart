@@ -12,7 +12,9 @@ class HomePage2 extends StatelessWidget {
       body: Center(
         child: Column(
           children: <Widget>[
-            // add image here
+            Container(
+                margin: EdgeInsets.all(10.0),
+                child: Image.asset('assets/icons/logo_transparent.png')),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/view_menu');
@@ -85,29 +87,13 @@ class HomePage2 extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10.0),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/view_menu');
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.red,
-                foregroundColor: Colors.black,
-                padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
-                side: BorderSide(color: Colors.black, width: 2),
+            Text(
+              "All rights reserved Burger Blast",
+              style: TextStyle(
+                fontSize: 10.0,
+                fontWeight: FontWeight.bold,
               ),
-              child: Container(
-                width: 200,
-                margin: const EdgeInsets.all(16.0),
-                alignment: Alignment.center,
-                child: const Text(
-                  "My Profile",
-                  style: TextStyle(
-                    fontSize: 18.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
+            )
           ],
         ),
       ),
