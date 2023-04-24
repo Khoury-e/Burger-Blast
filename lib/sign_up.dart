@@ -74,7 +74,28 @@ class SignUp extends StatelessWidget {
               ),
             ),
           ),
-          const Text("Or Sign Up using"),
+          Container(
+            margin: EdgeInsets.all(10.0),
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+                foregroundColor: Colors.black,
+                side: const BorderSide(color: Colors.black, width: 1),
+                padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+              ),
+              onPressed: () {
+                Navigator.pushNamed(context, '/view_menu');
+              },
+              child: const Text(
+                "Sign Up",
+                style: TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ),
+          const Text("Or Sign Up Using"),
           Container(
             margin: const EdgeInsets.all(10.0),
             child: Column(
