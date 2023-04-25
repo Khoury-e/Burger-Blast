@@ -18,17 +18,26 @@ class SignUp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 247, 213, 145),
-      body: Column(
+      body: Center(
+        child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
-            margin: const EdgeInsets.all(40.0),
+            margin: EdgeInsets.only(top:10),
+            child: Image.asset('assets/icons/logo_transparent.png'),
+            height: 150,
+            width: 400,
+          ), 
+          Container(
+            margin: const EdgeInsets.only(top:20),
             child: const Text(
-              "Welcome to Burger Blast!!",
+              "Welcome to Burger Blast!",
+              textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 40.0,
+                fontSize: 30.0,
+                color: Colors.red,
               ),
             ),
           ),
@@ -79,9 +88,13 @@ class SignUp extends StatelessWidget {
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.red,
-                foregroundColor: Colors.black,
-                side: const BorderSide(color: Colors.black, width: 1),
-                padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                foregroundColor:Color.fromARGB(255, 247, 213, 145),
+                shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30),
+                ),
+                padding: EdgeInsets.all(16),
+                //side: const BorderSide(color: Colors.black, width: 1),
+                //padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
               ),
               onPressed: () {
                 Navigator.pushNamed(context, '/view_menu');
@@ -107,14 +120,15 @@ class SignUp extends StatelessWidget {
                   onTap: () => launchUrlString('https://www.facebook.com'),
                 ),
                 InkWell(
-                  child: Text("LinkedIn", style: TextStyle(color: Colors.blue)),
-                  onTap: () => launchUrlString('https://www.linkedin.com'),
+                  child: Text("Google", style: TextStyle(color: Colors.blue)),
+                  onTap: () => launchUrlString('https://www.google.com'),
                 )
               ],
             ),
           )
         ],
       ),
+    ),
     );
   }
 }
