@@ -92,7 +92,7 @@ class HomePage2 extends StatelessWidget {
                 margin: const EdgeInsets.all(16.0),
                 alignment: Alignment.center,
                 child: const Text(
-                  "Sign In/Sign Up",
+                  "Sign Up",
                   style: TextStyle(
                     fontSize: 22.0,
                     fontWeight: FontWeight.bold,
