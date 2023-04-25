@@ -27,7 +27,7 @@ class HomePage2 extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
-                padding: EdgeInsets.all(16),
+                padding: EdgeInsets.all(10),
                 //padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
                 //side: BorderSide(color: Colors.black, width: 2),
               ),
@@ -55,7 +55,7 @@ class HomePage2 extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
-                padding: EdgeInsets.all(16),
+                padding: EdgeInsets.all(10),
                 //padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
                 //side: BorderSide(color: Colors.black, width: 2),
               ),
@@ -83,7 +83,7 @@ class HomePage2 extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
-                padding: EdgeInsets.all(16),
+                padding: EdgeInsets.all(10),
                 //padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
                 //side: BorderSide(color: Colors.black, width: 2),
               ),
@@ -111,7 +111,7 @@ class HomePage2 extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
-                padding: EdgeInsets.all(16),
+                padding: EdgeInsets.all(10),
                 //padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
                 //side: BorderSide(color: Colors.black, width: 2),
               ),
