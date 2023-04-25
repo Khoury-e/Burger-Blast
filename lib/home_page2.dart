@@ -23,9 +23,9 @@ class HomePage2 extends StatelessWidget {
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.red,
-                foregroundColor:  Color.fromARGB(255, 247, 213, 145),
+                foregroundColor: Color.fromARGB(255, 247, 213, 145),
                 shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(30),
                 ),
                 padding: EdgeInsets.all(16),
                 //padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
@@ -47,15 +47,15 @@ class HomePage2 extends StatelessWidget {
             SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/view_menu');
+                // Navigator.pushNamed(context, '/view_menu'); replace with navigation to special offer page
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.red,
-                foregroundColor:  Color.fromARGB(255, 247, 213, 145),
+                foregroundColor: Color.fromARGB(255, 247, 213, 145),
                 shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(30),
-              ),
-              padding: EdgeInsets.all(16),
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                padding: EdgeInsets.all(16),
                 //padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
                 //side: BorderSide(color: Colors.black, width: 2),
               ),
@@ -79,9 +79,9 @@ class HomePage2 extends StatelessWidget {
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.red,
-                foregroundColor:  Color.fromARGB(255, 247, 213, 145),
+                foregroundColor: Color.fromARGB(255, 247, 213, 145),
                 shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(30),
                 ),
                 padding: EdgeInsets.all(16),
                 //padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
@@ -93,6 +93,34 @@ class HomePage2 extends StatelessWidget {
                 alignment: Alignment.center,
                 child: const Text(
                   "Sign In/Sign Up",
+                  style: TextStyle(
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 10.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/signin');
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+                foregroundColor: Color.fromARGB(255, 247, 213, 145),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                padding: EdgeInsets.all(16),
+                //padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                //side: BorderSide(color: Colors.black, width: 2),
+              ),
+              child: Container(
+                width: 200,
+                margin: const EdgeInsets.all(16.0),
+                alignment: Alignment.center,
+                child: const Text(
+                  "Sign In",
                   style: TextStyle(
                     fontSize: 22.0,
                     fontWeight: FontWeight.bold,
