@@ -6,7 +6,7 @@ class HomePage1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+     return Scaffold(
       backgroundColor: Color.fromARGB(255, 247, 213, 145),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -17,30 +17,35 @@ class HomePage1 extends StatelessWidget {
             margin: EdgeInsets.all(20),
             child: Image.asset('assets/icons/logo_transparent.png'),
           ),
-
+          
           // Add a button shaped like an arrow
           ElevatedButton(
             onPressed: () {
               Navigator.pushNamed(context, '/home_2');
             },
             child: Text(
-              'tap to continue',
+              'Tap to continue',
               style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.normal,
-                color: Colors.black,
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+              color: Color.fromARGB(255, 247, 213, 145),
               ),
             ),
+            
             style: ElevatedButton.styleFrom(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20),
               ),
-              padding: EdgeInsets.all(18),
+              padding: EdgeInsets.all(20),
               primary: Colors.red,
             ),
           ),
+
+          
         ],
       ),
     );
+
+
   }
 }
