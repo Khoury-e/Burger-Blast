@@ -47,7 +47,7 @@ class HomePage2 extends StatelessWidget {
             SizedBox(height: 10.0),
             ElevatedButton(
               onPressed: () {
-                // Navigator.pushNamed(context, '/view_menu'); replace with navigation to special offer page
+                Navigator.pushNamed(context, '/special'); 
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.red,
