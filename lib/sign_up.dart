@@ -17,6 +17,12 @@ class SignUp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('SIGN UP', style: TextStyle(color:  Color.fromARGB(255, 247, 213, 145),  fontSize: 24,
+                  fontWeight: FontWeight.bold),),
+        backgroundColor: Colors.red,
+
+      ),
       backgroundColor: const Color.fromARGB(255, 247, 213, 145),
       body: Center(
         child: Column(
