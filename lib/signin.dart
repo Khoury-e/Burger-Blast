@@ -7,15 +7,28 @@ class SignIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('SIGN IN', style: TextStyle(color:  Color.fromARGB(255, 247, 213, 145),  fontSize: 24,
+                  fontWeight: FontWeight.bold),),
+        backgroundColor: Colors.red,
+
+      ),
       backgroundColor: Color.fromARGB(255, 247, 213, 145),
-      body: Column(
+      body: Center(
+        child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
+            margin: EdgeInsets.only(top:10),
+            child: Image.asset('assets/icons/logo_transparent.png'),
+            height: 150,
+            width: 400,
+          ), 
+          Container(
               margin: const EdgeInsets.all(10.0),
               child: const Text(
-                "Sign In With Burger Blast",
+                "Welcome Back to Burger Blast!",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.red,
@@ -51,6 +64,31 @@ class SignIn extends StatelessWidget {
             ),
           ),
           Container(
+            margin: EdgeInsets.all(10.0),
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+                foregroundColor:Color.fromARGB(255, 247, 213, 145),
+                shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30),
+                ),
+                padding: EdgeInsets.all(16),
+                //side: const BorderSide(color: Colors.black, width: 1),
+                //padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+              ),
+              onPressed: () {
+                Navigator.pushNamed(context, '/view_menu');
+              },
+              child: const Text(
+                "Sign In",
+                style: TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ),
+          /*Container(
             margin: const EdgeInsets.all(10.0),
             child: ElevatedButton(
               onPressed: () {
@@ -62,9 +100,10 @@ class SignIn extends StatelessWidget {
               ),
               child: const Text("Sign In"),
             ),
-          )
+          )*/
         ],
       ),
+      )
     );
   }
 }
