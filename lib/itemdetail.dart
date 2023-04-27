@@ -20,6 +20,14 @@ class itemdetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.red,
+        leading: GestureDetector(
+            child: Icon(Icons.arrow_back, color: Colors.black),
+            onTap: () {
+              Navigator.popAndPushNamed(context, '/view_menu');
+            }),
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
