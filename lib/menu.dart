@@ -17,7 +17,7 @@ class ViewMenu extends StatelessWidget {
               fontWeight: FontWeight.bold),
         ),
         backgroundColor: Colors.red,
-        actions: [
+        /*actions: [
           IconButton(
             onPressed: () {
               // TODO: Handle cart button click
@@ -27,7 +27,7 @@ class ViewMenu extends StatelessWidget {
               color: Color.fromARGB(255, 247, 213, 145),
             ),
           ),
-        ],
+        ], */
       ),
       backgroundColor: Color.fromARGB(255, 247, 213, 145),
       body: SingleChildScrollView(
