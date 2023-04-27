@@ -9,14 +9,14 @@ class SpecialOffers extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('SPECIAL OFFERS', style: TextStyle(color:  Color.fromARGB(255, 247, 213, 145),  fontSize: 24,
                   fontWeight: FontWeight.bold)), backgroundColor: Colors.red,
-                   actions: [
+                   /*actions: [
                     IconButton(
                       onPressed: () {
                         // TODO: Handle cart button click
                       },
                       icon: Icon(Icons.shopping_cart, color:  Color.fromARGB(255, 247, 213, 145),),
                     ),
-                  ],
+                  ],*/
       ),
       backgroundColor: Color.fromARGB(255, 247, 213, 145),
      
