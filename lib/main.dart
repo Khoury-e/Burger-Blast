@@ -1,3 +1,4 @@
+import 'package:burger_blast/itemdetail.dart';
 import 'package:burger_blast/menu.dart';
 import 'package:burger_blast/signin.dart';
 import 'package:flutter/material.dart';
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
             const SignIn(title: "Sign In Page"),
         '/special': (BuildContext context) =>
             const SpecialOffers(title: "Special Offers"),
+        '/itemdetail': (BuildContext context) => const itemdetail(),
       },
     );
   }
